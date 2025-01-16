@@ -18,10 +18,11 @@ body {
     
 }
 /* Ajustes del fondo */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     body {
         
         height: 300vh !important;
+        top: 400px !important;        
     }
 }
 
@@ -30,6 +31,11 @@ body {
         
         height: 250vh !important;
         left: 500px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-right: 10px;
     }
 }
 
@@ -75,6 +81,7 @@ header {
 }
 
 header h1 a {
+    color: #5000e4;
     text-decoration: none;
 }
 
@@ -260,9 +267,10 @@ header h1 a:hover {
 .content-1 .tarjeta-visita h1 {
     font-size: 26px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: linear-gradient(to right, rgb(243, 122, 243), rgb(52, 16, 53));
+    background: linear-gradient(to right, rgb(243, 122, 243), rgb(240, 2, 248));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
     
 }
 
@@ -271,7 +279,7 @@ header h1 a:hover {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
-    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .content-1 .tarjeta-visita button {
@@ -287,22 +295,32 @@ header h1 a:hover {
     background-color: rgb(100, 32, 100);
 }
 
+.content-1 .tarjeta-visita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .content-1 .tarjeta-visita .fondo-img {
-    width: 90%;
+    width: 100%;
     box-shadow: 10px 15px 15px black;
     margin-top: 20px;
+    margin-left: 0px;
     border-radius: 30%;
+    height: 25vh !important;
+    left: 0px;
     
 }
 
 .content-1 .tarjeta-visita .circulo-img {
-    width: 30%;
+    width: 25%;
     margin-top: 20px;
     border-radius: 50%;
     box-shadow: 10px 10px 100px 70px rgb(0, 0, 0);
-    position: relative;
+    
     filter: hue-rotate(270deg);
-    bottom: 300px;
+    bottom: 160px !important;
     
     
 }
@@ -325,7 +343,7 @@ header h1 a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 90px;
     font-style: italic;
-    background: linear-gradient(to left, purple, rgb(45, 16, 56));
+    background: linear-gradient(to left, purple, rgb(217, 112, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 2px 10px black;
@@ -385,27 +403,46 @@ header h1 a:hover {
 /* Ajustes content dispositivos moviles */
 
 /* Ajuste  para dispositivos móviles */
-@media screen and (max-width: 2780px) {
-    .content-1 .tarjeta-visita .circulo-img {
-        bottom: 290px;
-    }
-}
 
 @media screen and (max-width: 2800px) {
     
     
 
     .content-1 .tarjeta-visita .fondo-img {
-        width: 80% !important;
-        height: 400px !important;
+        width: 500px !important;
+        height: 500px !important;
     }
 
     .content-1 .tarjeta-visita .circulo-img {
-        bottom: 230px !important;
-        width: 25%;
+        width: 30% !important;
+        bottom: 300px !important;
     }
     
 }
+
+@media screen and (min-width: 2800px) {
+    
+    
+
+    .content-1 .tarjeta-visita .fondo-img {
+        width: 500px !important;
+        height: 500px !important;
+    }
+
+    .content-1 .tarjeta-visita .circulo-img {
+        width: 30% !important;
+        bottom: 300px !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 2780px) {
+    .content-1 .tarjeta-visita .circulo-img {
+        bottom: 290px;
+    }
+}
+
 
 @media screen and (min-width: 1411px) {
     .content-1 .tarjeta-visita{
@@ -473,18 +510,18 @@ header h1 a:hover {
     .content-1 .tarjeta-visita .fondo-img {
         width: 500px !important;
         height: 400px;
-        left: 40px !important;
+        
         z-index: 87;
     }
 
     .content-1 .tarjeta-visita .circulo-img {
     
-        width: 110px;
-        right: 250px;
+        width: 170px !important;
+        
         border: 1px solid red;
-        height: 15%;
+        height: 20%;
         z-index: 88;
-        bottom: 90px;
+        bottom: 300px !important;
 
         
     }
@@ -497,15 +534,15 @@ header h1 a:hover {
     @media screen and (max-width: 693px) {
     
         .content-1 .tarjeta-visita .fondo-img {
-            width: 300px !important;
+            width: 400px !important;
             height: 250px;
-            left: 40px;
+            
             
         }
         .content-1 .tarjeta-visita .circulo-img {
             width: 100px;
-            bottom: 60px !important;
-            right: 160px;
+            bottom: 230px !important;
+            
         }
     
         
@@ -513,6 +550,10 @@ header h1 a:hover {
 
     @media screen and (max-width: 463px) {
     
+        .content-1 .tarjeta-visita {
+            background: transparent;
+        }
+        
         .content-1 .tarjeta-visita .fondo-img {
             width: 320px !important;
             height: 250px;
@@ -523,6 +564,10 @@ header h1 a:hover {
             width: 100px;
             bottom: 220px !important;
             right: 0px;
+        }
+
+        .content-3 .tarjeta-login {
+            background: transparent;
         }
     
         
