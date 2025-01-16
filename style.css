@@ -9,19 +9,54 @@ body {
     
     
     background: url("assets/bg.jpg") no-repeat;
-    background-size: cover 100% 100vh;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 60vh;
+    height: 45vh !important;
     
     
     
 }
+/* Ajustes del fondo */
+@media screen and (max-width: 300px) {
+    body {
+        
+        height: 300vh !important;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    body {
+        
+        height: 250vh !important;
+        left: 500px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     body {
         background-size: auto 100%; 
         background-position: center top; 
-        height: 160vh;
+        height: 100vh;
+    }
+}
+
+
+
+@media screen and (max-width: 1255px) {
+    body {
+        
+        height: 150vh;
+    }
+}
+
+@media screen and (min-width: 1256px) {
+    body {
+        /* background-size: auto 100%; 
+        background-position: center top; 
+        width: 100%; */
+        height: 100vh;
     }
 }
 
@@ -359,23 +394,38 @@ header h1 a:hover {
     }
 }
 
-@media screen and (max-width: 2500px) {
+@media screen and (max-width: 2800px) {
     
     
 
     .content-1 .tarjeta-visita .fondo-img {
-        width: 100%;
-        height: 500px;
+        width: 80% !important;
+        height: 400px !important;
     }
 
     .content-1 .tarjeta-visita .circulo-img {
-        bottom: 240px;
+        bottom: 230px !important;
         width: 25%;
     }
     
 }
 
+@media screen and (min-width: 1411px) {
+    .content-1 .tarjeta-visita{
+        
+        height: 83%;
+        
+    }
+    
+    .content-1 .tarjeta-visita .fondo-img {
+        width: 400px;
+        height: 210px;
+    }
+    .content-1 .tarjeta-visita .circulo-img {
+        bottom: 130px;
 
+    }
+}
 
 @media screen and (max-width: 1410px) {
 
@@ -416,7 +466,7 @@ header h1 a:hover {
     }
 
     .columna {
-        padding: 130px 0px 110px 0px; /* Reduce el padding de las columnas */
+        padding: 10px 0px 110px 0px; /* Reduce el padding de las columnas */
     }
 
     .content-1 {
@@ -426,21 +476,26 @@ header h1 a:hover {
     .content-1 .tarjeta-visita .fondo-img {
         width: 500px !important;
         height: 400px;
-        left: 100px;
+        left: 40px !important;
         z-index: 87;
     }
 
     .content-1 .tarjeta-visita .circulo-img {
     
         width: 110px;
-        right: 200px;
+        right: 250px;
         border: 1px solid red;
         height: 15%;
         z-index: 88;
         bottom: 90px;
+
         
     }
+    .content-2 h1 {
+        font-size: 50px;
+        margin-top: 140px !important;
     }
+}
 
     @media screen and (max-width: 693px) {
     
@@ -454,6 +509,23 @@ header h1 a:hover {
             width: 100px;
             bottom: 60px !important;
             right: 160px;
+        }
+    
+        
+    }
+
+    @media screen and (max-width: 463px) {
+    
+        .content-1 .tarjeta-visita .fondo-img {
+            width: 340px !important;
+            height: 250px;
+            left: 0px !important;
+            
+        }
+        .content-1 .tarjeta-visita .circulo-img {
+            width: 100px;
+            bottom: 220px !important;
+            right: 0px;
         }
     
         
