@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    
+    background: url("/assets/bg.jpg") no-repeat;
+    background-size: cover 100% 100vh;
+    width: 100%;
+    height: 60vh;
+    
+    
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: auto 100%; 
+        background-position: center top; 
+        height: 160vh;
+    }
+}
+
+
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: rgb(44, 44, 43);
+    z-index: 100;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: gray !important;
+}
+
+
+.logo{
+    max-width: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+    flex-grow: 1;
+    
+}
+
+.title {
+    
+    flex-grow: 3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 10px 5px 13px;
+    padding: 0px 0px 0px 10px;
+    
+    
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    gap: 20px;
+    background-color: transparent;
+    flex-grow: 1;
+    
+    
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px 20px;
+    
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #5000e4;
+    background-color: rgb(39, 39, 39);
+}
+
+.nav-list li .activo {
+    color: #5000e4;
+    background-color: rgb(39, 39, 39);
+}
+
+.nav-list li .login {
+    color: #f8f8f8;
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+}
+
+.nav-list li .login:hover {
+    color: green;
+}
+
+
+
+.abrir, .cerrar {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .abrir, .cerrar {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir {
+        color: #ebebeb;
+    }
+
+    .cerrar {
+        color: white;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav {
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        background-color: rgb(15, 15, 15);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list a {
+        color: white;
+    }
+
+}
+
+/* Web Content */
+
+.web-content {
+    width: 100%;
+    
+    position: relative;
+    bottom: 130px;
+}
+
+.presentation {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+    height: 60vh;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+
+}
+
+.columna {
+    background-color: transparent !important;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+/* Contenido1 */
+
+
+
+.content-1 img {
+    width: 120px;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 98;
+    
+}
+/* Tarjeta de visita */
+
+.content-1 .tarjeta-visita {
+    background-color: rgba(82, 82, 82, 0.486);
+    padding: 40px 20px 0px 20px;
+    height: 75%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+.content-1 .tarjeta-visita h1 {
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, rgb(243, 122, 243), rgb(52, 16, 53));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+.content-1 .tarjeta-visita p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    margin-left: 20px;
+}
+
+.content-1 .tarjeta-visita button {
+    margin-top: 10px;
+    background-color: rgb(143, 60, 143);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-1 .tarjeta-visita button:hover {
+    background-color: rgb(100, 32, 100);
+}
+
+.content-1 .tarjeta-visita .fondo-img {
+    width: 90%;
+    box-shadow: 10px 15px 15px black;
+    margin-top: 20px;
+    border-radius: 30%;
+    
+}
+
+.content-1 .tarjeta-visita .circulo-img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 100px 70px rgb(0, 0, 0);
+    position: relative;
+    filter: hue-rotate(270deg);
+    bottom: 300px;
+    
+    
+}
+
+
+
+
+
+
+
+/* Contenido2 */
+
+.content-2 {
+    position: relative;
+    align-content: center;
+}
+
+.content-2 h1 {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    font-style: italic;
+    background: linear-gradient(to left, purple, rgb(45, 16, 56));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 2px 10px black;
+    align-content: center;
+    
+}
+
+
+.content-2 p {
+    max-width: 500px;
+    margin: auto;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+/* Contenido3 */
+
+.content-3 .tarjeta-login {
+    background-color: rgba(82, 82, 82, 0.486);
+    padding: 20px;
+    padding: 40px 20px 70px 20px;
+    border-radius: 10px;
+}
+
+.content-3 {
+    position: relative;
+    align-content: center;
+}
+
+.content-3 h2 {
+    
+    
+}
+
+.content-3 p {
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+.presentation .content-3 i {
+    font-size: 60px;
+    padding: 0px 0px;
+}
+
+
+
+.content-3 button {
+    margin-top: 10px;
+    background-color: rgb(143, 60, 143);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ajustes content dispositivos moviles */
+
+/* Ajuste  para dispositivos móviles */
+@media screen and (max-width: 2780px) {
+    .content-1 .tarjeta-visita .circulo-img {
+        bottom: 290px;
+    }
+}
+
+@media screen and (max-width: 2500px) {
+    
+    
+
+    .content-1 .tarjeta-visita .fondo-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .content-1 .tarjeta-visita .circulo-img {
+        bottom: 240px;
+        width: 25%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1410px) {
+
+    .content-1 .tarjeta-visita{
+        
+        height: 85%;
+        
+    }
+
+    .content-1 .tarjeta-visita p {
+        min-width: 300px;
+    }
+    .content-1 .tarjeta-visita .fondo-img {
+        width: 400px;
+        height: 300px;
+    }
+    .content-1 .tarjeta-visita .circulo-img {
+        bottom: 170px;
+
+    }
+
+    .content-3 .tarjeta-login {
+        padding: 0px 80px 0px 80px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    
+    .web-content {
+        height: 100vh;
+    }
+
+    .presentation {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+        padding: 10px; /* Reduce el padding */
+        margin-top: 150px; /* Ajusta el margen superior si es necesario */
+    }
+
+    .columna {
+        padding: 130px 0px 110px 0px; /* Reduce el padding de las columnas */
+    }
+
+    .content-1 {
+        order: 2;
+    }
+
+    .content-1 .tarjeta-visita .fondo-img {
+        width: 500px !important;
+        height: 400px;
+        left: 100px;
+        z-index: 87;
+    }
+
+    .content-1 .tarjeta-visita .circulo-img {
+    
+        width: 110px;
+        right: 200px;
+        border: 1px solid red;
+        height: 15%;
+        z-index: 88;
+        bottom: 90px;
+        
+    }
+    }
+
+    @media screen and (max-width: 693px) {
+    
+        .content-1 .tarjeta-visita .fondo-img {
+            width: 300px !important;
+            height: 250px;
+            left: 40px;
+            
+        }
+        .content-1 .tarjeta-visita .circulo-img {
+            width: 100px;
+            bottom: 60px !important;
+            right: 160px;
+        }
+    
+        
+    }
+
+    
+
+
+/* Footer */
+
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    
+}
