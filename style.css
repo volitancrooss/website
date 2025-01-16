@@ -12,7 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 45vh !important;
+    height: 55vh;
     
     
     
@@ -357,10 +357,7 @@ header h1 a:hover {
     align-content: center;
 }
 
-.content-3 h2 {
-    
-    
-}
+
 
 .content-3 p {
     text-align: center;
@@ -517,7 +514,7 @@ header h1 a:hover {
     @media screen and (max-width: 463px) {
     
         .content-1 .tarjeta-visita .fondo-img {
-            width: 340px !important;
+            width: 320px !important;
             height: 250px;
             left: 0px !important;
             
