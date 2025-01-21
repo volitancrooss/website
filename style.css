@@ -179,7 +179,7 @@ header h1 a:hover {
 
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 600px) {
     .logo {
         width: 10%;
     }
@@ -525,6 +525,11 @@ header h1 a:hover {
             bottom: 230px !important;
             
         }
+
+        footer p {
+            min-width: 200px;
+            font-size: 10px;
+        } 
     
         
     }
@@ -551,10 +556,7 @@ header h1 a:hover {
             background: transparent;
         }
 
-        footer p {
-            min-width: 200px;
-            font-size: 10px;
-        } 
+        
     
         
     }
