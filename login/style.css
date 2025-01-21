@@ -133,12 +133,12 @@ header h1 a:hover {
         color: white;
     }
 
-    .nav {
+    nav {
         opacity: 0;
         visibility: hidden;
     }
 
-    .nav {
+    nav {
 
         display: flex;
         flex-direction: column;
