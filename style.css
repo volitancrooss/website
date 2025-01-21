@@ -6,62 +6,28 @@
 }
 
 body {
-    
-    
-    background: url("assets/bg.jpg") no-repeat;
+    background: url("assets/bg.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 55vh !important;
-    
-    
-    
-}
-/* Ajustes del fondo */
-@media screen and (max-width: 400px) {
-    body {
-        
-        height: 300vh !important;
-        top: 400px !important;        
-    }
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 563px) {
-    body {
-        
-        height: 250vh !important;
-        left: 500px;
-    }
-
-    .title {
-        font-size: 20px;
-        margin-right: 10px;
-    }
-}
-
-
+/* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-width: 768px) {
     body {
-        background-size: auto 100%; 
-        background-position: center top; 
+        background-size: cover;
+        background-position: center top;
         height: 100vh;
     }
 }
 
-
-
 @media screen and (max-width: 1255px) {
     body {
-        
-        height: 150vh;
-    }
-}
-
-@media screen and (min-width: 1256px) {
-    body {
-        /* background-size: auto 100%; 
-        background-position: center top; 
-        width: 100%; */
+        background-size: cover;
+        background-position: center center;
         height: 100vh;
     }
 }
@@ -174,12 +140,12 @@ header h1 a:hover {
         color: white;
     }
 
-    .nav {
+    nav {
         opacity: 0;
         visibility: hidden;
     }
 
-    .nav {
+    nav {
 
         display: flex;
         flex-direction: column;
@@ -487,6 +453,7 @@ header h1 a:hover {
 }
 
 @media screen and (max-width: 1255px) {
+    
     
     .web-content {
         height: 100vh;
