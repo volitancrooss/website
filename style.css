@@ -179,6 +179,16 @@ header h1 a:hover {
 
 }
 
+@media screen and (max-width: 100px) {
+    .logo {
+        width: 10%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+}
+
 /* Web Content */
 
 .web-content {
@@ -540,6 +550,11 @@ header h1 a:hover {
         .content-3 .tarjeta-login {
             background: transparent;
         }
+
+        footer p {
+            min-width: 200px;
+            font-size: 10px;
+        } 
     
         
     }
@@ -559,7 +574,10 @@ footer {
     justify-content: space-between;
     z-index: 99;
     
+    
 }
+
+
 
 .popup {
     display: none;
